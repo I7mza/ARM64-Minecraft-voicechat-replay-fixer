@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "rvc_aac_fix",
+  "version": "1.0.0",
+  "name": "Replay Voice Chat AAC Patch",
+  "description": "Intercepts FFmpeg calls in Replay Voice Chat to use native AAC encoding on Android.",
+  "authors": ["Zalith User"],
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "rvcfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.20.1"
+  }
+}
