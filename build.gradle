@@ -9,17 +9,15 @@ group = "com.zalith.fix"
 repositories {
     mavenCentral()
     maven { url 'https://maven.fabricmc.net/' }
-    maven { url 'https://maven.maxhenkel.de/repository/public' }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.20.1" // Match your Minecraft version
+    minecraft "com.mojang:minecraft:1.20.1"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:0.15.11"
 }
 
-loom {
-    mixin {
-        defaultRefmapName = "rvcfix.refmap.json"
-    }
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
